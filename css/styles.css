@@ -1,0 +1,241 @@
+:root {
+  --button-color: #ffffff;
+  --button-background: #4d5ae5;
+  --button-background-hover: #404bbf;
+  --background-color: #ffffff;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: var(--background-color);
+}
+.header {
+  background-color: var(--background-color);
+}
+.header_nav {
+  background-color: var(--background-color);
+}
+
+.header_logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+.header_logo_two {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2e2f42;
+}
+.header_logo_two:is(:hover, :focus) {
+  color: #4d5ae5;
+  text-decoration: underline #4d5ae5;
+}
+.header_list {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: #2e2f42;
+}
+
+.header_link {
+  width: 48px;
+  height: 24px;
+  color: #2e2f42;
+}
+.header_link:is(:hover, :focus) {
+  color: #404bbf;
+}
+.header_mail {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.header_mail:is(:hover, :focus) {
+  color: #404bbf;
+}
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+.link {
+  text-decoration: none;
+}
+.adress {
+  font-style: normal;
+}
+.header_phone {
+  font-size: 16px;
+  line-height: 1.5;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.02em;
+
+  /* SLATE */
+
+  color: #434455;
+}
+.header_phone:is(:hover, :focus) {
+  color: #404bbf;
+}
+/*------------------HEROSECTION------------------*/
+.hero_section {
+  background: #2e2f42;
+}
+.hero_section_tytle {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  /* or 107% */
+  color: #ffffff;
+}
+.hero_btn {
+  cursor: pointer;
+  background: var(--button-background);
+  /* Button Text */
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  /* WHITE */
+
+  color: var(--button-color);
+}
+.hero_btn:is(:hover, :focus) {
+  background-color: var(--button-background-hover);
+}
+.section_two_tytle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.section_two_item {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.section_three_tytle {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: #2e2f42;
+}
+.section-four {
+  background-color: #f4f4fd;
+}
+.section-four-list {
+  background-color: var(--background-color);
+}
+.section-four-link link {
+  background-color: var(--background-color);
+}
+.section_four_tytle {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.section_four_name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.section_four_proffession {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.footer {
+  background: #2e2f42;
+}
+.footer_logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+.footer_logo_two {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
+}
+.footer_text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+.portfolio_btn {
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4d5ae5;
+  background-color: #f4f4fd;
+}
+.portfolio_btn:is(:hover, :focus) {
+  background: #404bbf;
+  color: #ffffff;
+}
+.portfolio_title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.portfolio_desc {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
