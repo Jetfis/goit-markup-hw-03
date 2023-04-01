@@ -3,12 +3,19 @@
   --button-background: #4d5ae5;
   --button-background-hover: #404bbf;
   --background-color: #ffffff;
+  --bg-gradient: var(
+    --background-linear-gradient: rgba(46, 47, 66, 0.7) ;rgba(46, 47, 66, 0.7) ;
+  );
 }
 p,
 h1,
 h2,
 h3,
-span {
+ul,
+li,
+a,
+span,
+button {
   margin: 0;
 }
 address {
@@ -26,7 +33,7 @@ body {
   background-color: var(--background-color);
 }
 .container {
-  width: 1128px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -39,15 +46,24 @@ body {
   display: flex;
 }
 .header {
+  display: flex;
   background-color: var(--background-color);
+}
+.header .container {
+  display: flex;
+  align-items: center;
 }
 .header_nav {
   background-color: var(--background-color);
+  margin-right: auto;
 }
 
 .header_logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
+  margin-right: 76px;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -56,20 +72,17 @@ body {
   color: #4d5ae5;
 }
 .header_logo_two {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #2e2f42;
 }
 .header_logo_two:is(:hover, :focus) {
   color: #4d5ae5;
 }
 .header_list {
-  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -77,14 +90,19 @@ body {
 
   color: #2e2f42;
 }
-
 .header_link {
-  width: 48px;
-  height: 24px;
   color: #2e2f42;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header_link:is(:hover, :focus) {
   color: #404bbf;
+}
+.contacts-list {
+}
+.contacts-items:not(:last-child) {
+  margin-right: 40px;
 }
 .header_mail {
   font-size: 16px;
@@ -105,15 +123,16 @@ body {
 .adress {
   font-style: normal;
 }
+.header_mail,
+.header_phone {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .header_phone {
   font-size: 16px;
   line-height: 1.5;
-  /* identical to box height, or 150% */
-
   letter-spacing: 0.02em;
-
-  /* SLATE */
-
   color: #434455;
 }
 .header_phone:is(:hover, :focus) {
@@ -122,36 +141,33 @@ body {
 /*------------------HEROSECTION------------------*/
 .hero_section {
   background: #2e2f42;
+  width: 1440px;
 }
 .hero_section_tytle {
+  text-align: center;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
-
-  margin-left: auto;
-  margin-right: auto;
-  /* or 107% */
   color: #ffffff;
 }
 .hero_btn {
   cursor: pointer;
   background: var(--button-background);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  gap: 10px;
   /* Button Text */
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   letter-spacing: 0.04em;
   margin: 0 auto;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   /* WHITE */
 
   color: var(--button-color);
@@ -159,6 +175,7 @@ body {
 .hero_btn:is(:hover, :focus) {
   background-color: var(--button-background-hover);
 }
+/**----SECTION 2--------**/
 .section_two_tytle {
   font-weight: 500;
   font-size: 20px;
@@ -166,13 +183,31 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+.section-two-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.section-two-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
 .section_two_item {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
+/*------SECTION 3-------*/
+.section-three-box {
+  display: flex;
+}
 .section_three_tytle {
+  padding-top: 120px;
+  padding-bottom: 72px;
   text-align: center;
   text-transform: capitalize;
   font-weight: 700;
