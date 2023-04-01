@@ -48,6 +48,7 @@ body {
 .header {
   display: flex;
   background-color: var(--background-color);
+  border-bottom: 1px solid #e7e9fc;
 }
 .header .container {
   display: flex;
@@ -116,6 +117,8 @@ body {
 .list {
   list-style: none;
   text-decoration: none;
+  margin: 0;
+  padding-left: 0;
 }
 .link {
   text-decoration: none;
@@ -141,9 +144,13 @@ body {
 /*------------------HEROSECTION------------------*/
 .hero_section {
   background: #2e2f42;
-  width: 1440px;
+  padding: 188px 0;
 }
 .hero_section_tytle {
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
   text-align: center;
   font-weight: 700;
   font-size: 56px;
@@ -152,15 +159,14 @@ body {
   color: #ffffff;
 }
 .hero_btn {
+  display: block;
+  border: none;
   cursor: pointer;
   background: var(--button-background);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   width: 169px;
   height: 56px;
-  padding: 16px 32px;
-  gap: 10px;
-  /* Button Text */
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -176,7 +182,11 @@ body {
   background-color: var(--button-background-hover);
 }
 /**----SECTION 2--------**/
+.section-two {
+  padding: 120px 0;
+}
 .section_two_tytle {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -186,14 +196,9 @@ body {
 .section-two-list {
   display: flex;
   gap: 24px;
-  align-items: center;
 }
 .section-two-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 8px;
+  width: calc((100% - 24px * 3) / 4);
 }
 .section_two_item {
   font-size: 16px;
@@ -202,12 +207,14 @@ body {
   color: #434455;
 }
 /*------SECTION 3-------*/
-.section-three-box {
-  display: flex;
+.section-three {
+  padding-bottom: 120px;
+}
+.section-three-list {
+  gap: 24px;
 }
 .section_three_tytle {
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   text-align: center;
   text-transform: capitalize;
   font-weight: 700;
@@ -215,16 +222,30 @@ body {
   line-height: 1.11;
   color: #2e2f42;
 }
+.section-three-item {
+  width: calc((100% - 24px * 2) / 3);
+}
+
+/**-------SECTION 4---------**/
 .section-four {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: #f4f4fd;
 }
 .section-four-list {
+  display: flex;
+  gap: 24px;
+}
+.section-four-link {
+  width: calc((100% - 24px * 3) / 4);
   background-color: var(--background-color);
 }
-.section-four-link link {
-  background-color: var(--background-color);
+.section-four-wrapper {
+  text-align: center;
+  padding: 32px 0;
 }
 .section_four_tytle {
+  margin-bottom: 72px;
   text-align: center;
   text-transform: capitalize;
   font-weight: 700;
@@ -234,6 +255,7 @@ body {
   color: #2e2f42;
 }
 .section_four_name {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -246,40 +268,48 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
+/**------FOOTER-------**/
 .footer {
   background: #2e2f42;
+  padding: 100px 0;
 }
 .footer_logo {
+  display: block;
+  margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
 }
 .footer_logo_two {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #f4f4fd;
 }
 .footer_text {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
+/**------PORTFOLIO-----**/
+/**------HERO-SECTION-----*/
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.portfolio-btn-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
 .portfolio_btn {
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.04em;
@@ -293,7 +323,24 @@ body {
   background: #404bbf;
   color: #ffffff;
 }
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.card-list li {
+  width: calc((100% - 2 * 24px) / 3);
+}
+.card-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 .portfolio_title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -305,4 +352,17 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+.social-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--button-background);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
