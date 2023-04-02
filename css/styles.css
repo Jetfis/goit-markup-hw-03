@@ -17,6 +17,7 @@ a,
 span,
 button {
   margin: 0;
+  padding: 0;
 }
 address {
   font-style: normal;
