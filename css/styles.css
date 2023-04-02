@@ -14,6 +14,9 @@ h3,
 ul,
 li,
 a,
+img {
+  display: block;
+}
 span,
 button {
   margin: 0;
